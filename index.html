@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Particle</title>
+    <style>
+      *
+      {
+        padding: 0px;
+        margin: 0px;
+        user-select: none;
+      }
+      div
+      {
+        width: 0px;
+        height: 0px;
+        padding: 0px;
+        margin: 0px;
+      }
+      .deathscreen {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        display: none;
+        line-height: 40vh;
+        text-align: center;
+        font-size: 10vw;
+      }
+      button {
+        font-size: 5vh;
+        padding: 5vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="deathscreen">Ha! You Died! <br><button onclick="startover();">Play again...</button></div>
+    <div id="main">
+      <script src="lib/utils.js" charset="utf-8"></script>
+      <script src="lib/keyboard.js" charset="utf-8"></script>
+      <script src="lib/main.js" charset="utf-8"></script>
+      <script src="lib/drawplatforms.js" charset="utf-8"></script>
+      <script src="js/game.js" charset="utf-8"></script>
+    </div>
+  </body>
+</html>
